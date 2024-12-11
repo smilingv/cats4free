@@ -1,0 +1,171 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+  background-color: #ffdef0;
+  color: #5b0082;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+main {
+  padding: 10px;
+}
+
+#top-nav {
+  background-color: #d99ac5;
+  color: rgb(6, 0, 0);
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(255, 5, 5, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+#top-nav.hidden {
+  transform: translateY(-80%); /* Hides the nav bar */
+}
+
+#top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#top-nav li {
+  margin: 0 90px;
+}
+
+#top-nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#top-nav a:hover {
+  color: #000000;
+}
+
+main {
+  margin-top: 20px; 
+}
+
+ /*about us spaced p*/
+.spaced-paragraph {
+  padding-top: 15px;
+}
+
+
+/* available cats section */
+.spaced-paragraph2 {
+  padding-top: 50px;
+}
+.cat-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 20px; /* Gap between the cards */
+  padding: 5px;
+  justify-items: center; /* Ensure that the cards are centered in each column */
+}
+
+.cat-card {
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(233, 108, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+  max-width: 240px;
+  width: 100%;
+}
+
+.cat-card:hover {
+  transform: scale(2);
+}
+
+.cat-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.cat-card h3 {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.cat-card p {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #ff3191;
+  color: white;
+  padding: 8px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+/* adoption form section */
+#adoption-form {
+  background-color: white;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#adoption-form select, #adoption-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#checkboxes {
+  margin: 10px 0;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+
